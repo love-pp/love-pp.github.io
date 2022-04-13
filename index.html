@@ -360,7 +360,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                    subtitle
+                欢迎来到 pp 的世界
                 
             </div>
 
@@ -394,7 +394,7 @@
 
 
             <div class="cover-btns">
-                <a href="#articles" class="waves-effect waves-light btn">
+                <a href="#indexCard" class="waves-effect waves-light btn">
                     <i class="fa fa-angle-double-down"></i>开始阅读
                 </a>
 
@@ -524,6 +524,42 @@
                     
 
                     
+                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;视频
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                    ></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: '/medias/%E9%80%81%E7%BB%99pp%E7%9A%843.7.mp4',
+                pic: '',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
+
+                    
 
                     
                     <div id="recommend-sections" class="recommend">
@@ -551,17 +587,16 @@
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="pp用过的头像合集">
+                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="pp的身体健康">
                             
-                            <span class="card-title">pp用过的头像合集</span>
+                            <span class="card-title">pp的身体健康</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                
-
+                                过敏源    备注    药品及治疗手段海鲜    海产品不能吃，例如螃蟹，深海鱼，生蚝等等，还有海鲜加工品（特别注意）芒果酒精    据本人说现在能喝了，以毒攻毒？但是一般还是别给喝比较好，快乐水不香吗冷空气    要把她包裹的严严实实的
                             
                         </div>
                         <div class="publish-info">
